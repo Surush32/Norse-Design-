@@ -3,53 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Client Website Information Form | Norse Design Studios</title>
+    <title>Client Website Form | Norse Design Studios</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Norse Design Studios</h1>
-            <p>Crafting Digital Experiences</p>
         </header>
 
         <section class="form-section">
-            <h2>Client Website Information Form</h2>
-            <p>To help us create a website tailored to your needs, please provide the following information. Your input will guide the design and development process at Norse Design Studios.</p>
+            <h2>Client Website Information</h2>
 
             <form id="websiteForm" action="https://formspree.io/f/myzganyv" method="POST">
                 <!-- Company Information -->
-                <h3 data-number="1">Company Information</h3>
+                <h3>Company Information</h3>
                 <label for="companyName">Company Name:</label>
                 <input type="text" id="companyName" name="companyName" required><br><br>
 
-                <label for="companyDesc">What does your company do?</label>
-                <textarea id="companyDesc" name="companyDesc" rows="4" required></textarea><br><br>
+                <label for="companyDesc">Description:</label>
+                <textarea id="companyDesc" name="companyDesc" rows="3" required></textarea><br><br>
 
                 <!-- Website Purpose -->
-                <h3 data-number="3">Website Purpose</h3>
-                <label for="websiteGoal">What is the main goal of the website?</label>
-                <input type="text" id="websiteGoal" name="websiteGoal" required placeholder="e.g., Showcase services, sell products"><br><br>
+                <h3>Website Purpose</h3>
+                <label for="websiteGoal">Goal:</label>
+                <input type="text" id="websiteGoal" name="websiteGoal" required><br><br>
 
-                <label for="audience">Who is your target audience?</label>
+                <label for="audience">Audience:</label>
                 <input type="text" id="audience" name="audience" required><br><br>
 
-                <!-- Design Preferences -->
-                <h3 data-number="5">Design Preferences</h3>
-                <label for="mediaLinks">Do you have any photos, videos, or other media you would like to include? (Provide links):</label>
-                <textarea id="mediaLinks" name="mediaLinks" rows="4"></textarea><br><br>
+                <label for="logo">Logo:</label>
+                <input type="text" id="logo" name="logo"><br><br>
 
-                <!-- Contact -->
-                <h3 data-number="6">Contact Information</h3>
-                <label for="contactInfo">What information do you want to display prominently?</label>
-                <textarea id="contactInfo" name="contactInfo" rows="4" placeholder="e.g., Phone number, contact form, product listings"></textarea><br><br>
+                <!-- Design Preferences -->
+                <h3>Design Preferences</h3>
+                <label for="mediaLinks">Media Links:</label>
+                <textarea id="mediaLinks" name="mediaLinks" rows="3"></textarea><br><br>
+
+                <label for="colorScheme">Color Scheme:</label>
+                <input type="text" id="colorScheme" name="colorScheme"><br><br>
+
+                <!-- Prominent Information -->
+                <h3>Prominent Information</h3>
+                <label for="mainContent">Key Info:</label>
+                <textarea id="mainContent" name="mainContent" rows="3"></textarea><br><br>
 
                 <!-- Social Media -->
-                <h3 data-number="7">Social Media</h3>
-                <label for="socialMedia">Do you want to integrate social media accounts? (e.g., Instagram, LinkedIn)</label>
+                <h3>Social Media</h3>
+                <label for="socialMedia">Links:</label>
                 <input type="text" id="socialMedia" name="socialMedia"><br><br>
 
-                <button type="submit">Submit Information</button>
+                <button type="submit">Submit</button>
             </form>
         </section>
 
